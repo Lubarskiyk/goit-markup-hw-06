@@ -21,41 +21,79 @@
   </head>
   <body>
     <header class="header">
-      <div class="container wraper">
-        <nav class="header-nav">
-          <a href="./index.html" class="header-logo logo-text"
-            >Web<span class="logo-span">Studio</span></a
-          >
-          <ul class="header-menu">
-            <li class="header-menu-item">
-              <a href="./index.html" class="header-menu-title">Studio</a>
+      <div class="container header-wraper">
+        <a href="./index.html" class="logo-text header-logo"
+          >Web<span class="logo-span">Studio</span></a
+        >
+        <div class="header-mobile-menu" burger-modal>
+          <button class="button-close-header" type="button" data-burger-close>
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+          <nav class="header-nav">
+            <ul class="header-menu">
+              <li class="header-menu-item">
+                <a href="./index.html" class="header-menu-title">Studio</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="" class="header-menu-title">Portfolio</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="" class="header-menu-title">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header-contacts">
+            <ul class="header-contacts-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="header-contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="header-contact"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="header-social">
+            <li class="header-social-icon">
+              <a href="" class="header-social-link social-link"
+                ><svg class="header-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram-icon"></use></svg
+              ></a>
             </li>
-            <li class="header-menu-item">
-              <a href="" class="header-menu-title">Portfolio</a>
+            <li class="header-social-icon">
+              <a href="" class="header-social-link social-link"
+                ><svg class="header-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter-icon"></use></svg
+              ></a>
             </li>
-            <li class="header-menu-item">
-              <a href="" class="header-menu-title">Contacts</a>
+            <li class="header-social-icon">
+              <a href="" class="header-social-link social-link"
+                ><svg class="header-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook-icon"></use></svg
+              ></a>
+            </li>
+            <li class="header-social-icon">
+              <a href="" class="header-social-link social-link"
+                ><svg class="header-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin-icon"></use></svg
+              ></a>
             </li>
           </ul>
-        </nav>
-        <address class="header-contacts">
-          <ul class="header-contacts-list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="header-contact"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="header-contact"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
+        <button type="button" class="header-burger" data-burger-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="hero">
         <div class="container">
           <h1 class="hero-title title-1">
@@ -67,7 +105,7 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <!--      <section class="advantages">
         <div class="container">
           <h2 class="title-2 visually-hidden">Advantages</h2>
           <ul class="advantages-cards-list">
@@ -429,10 +467,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!--  <footer class="footer">
       <div class="container">
         <div class="footer-text-logo">
           <a href="./index.html" class="footer-logo logo-text"
@@ -577,7 +615,7 @@
           <button type="submit" class="form-button button-text">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
