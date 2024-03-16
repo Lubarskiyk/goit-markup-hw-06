@@ -1,0 +1,46 @@
+.advantages-cards-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+.advantages-cards-item {
+  display: block;
+}
+.advantages-card-icon {
+  display: none;
+}
+
+.advantages-card-title {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-cards-list {
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .advantages-cards-item {
+    display: block;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .advantages-cards-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .advantages-card-icon {
+    display: flex;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid var(--light-slate);
+    background-color: var(--cloud);
+    margin-bottom: 8px;
+  }
+  .card-icon {
+    height: 64px;
+    width: 64px;
+  }
+}
