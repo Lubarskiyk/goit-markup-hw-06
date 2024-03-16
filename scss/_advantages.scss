@@ -4,9 +4,7 @@
   flex-wrap: wrap;
   gap: 72px;
 }
-.advantages-cards-item {
-  display: block;
-}
+
 .advantages-card-icon {
   display: none;
 }
@@ -21,7 +19,6 @@
     row-gap: 72px;
   }
   .advantages-cards-item {
-    display: block;
     flex-basis: calc((100% - 24px) / 2);
   }
 }
@@ -31,7 +28,8 @@
   }
   .advantages-card-icon {
     display: flex;
-    height: 112px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
