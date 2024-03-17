@@ -466,7 +466,8 @@ body {
   padding: 72px 0;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to bottom, var(--grey), var(--grey)), url(../images/hero-people-office.jpeg);
+  background-image: linear-gradient(to bottom, var(--grey), var(--grey)), -webkit-image-set("../images/hero-people-office.webp" type("image/webp") 1x, "../images/hero-people-office-2x.webp" type("image/webp") 2x, "../images/hero-people-office.jpg" type("image/jpg") 1x, "../images/hero-people-office-2x.jpg" type("image/jpg") 2x);
+  background-image: linear-gradient(to bottom, var(--grey), var(--grey)), image-set("../images/hero-people-office.webp" type("image/webp") 1x, "../images/hero-people-office-2x.webp" type("image/webp") 2x, "../images/hero-people-office.jpg" type("image/jpg") 1x, "../images/hero-people-office-2x.jpg" type("image/jpg") 2x);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -497,7 +498,6 @@ body {
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
-    background-color: var(--navy-blue);
     padding: 188px 0;
   }
   .hero-title {
