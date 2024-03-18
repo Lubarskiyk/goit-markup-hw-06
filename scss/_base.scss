@@ -10,6 +10,9 @@ body {
   letter-spacing: 0.02em;
   background-color: var(--white);
 }
+body.lock {
+  overflow: hidden;
+}
 .title-1 {
   font-weight: 700;
   font-size: 36px;
@@ -49,14 +52,16 @@ body {
   border: none;
   background-color: var(--iris);
   color: var(--white);
-
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.04em;
-
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-text:hover,
+.button-text:focus {
+  background-color: var(--ocean);
 }
 
 .logo-text {
@@ -67,7 +72,7 @@ body {
   letter-spacing: 0.03em;
   font-weight: 700;
   color: var(--iris);
-  display: inline-block;
+  display: block;
 }
 
 .social-link {

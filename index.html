@@ -20,7 +20,7 @@
         <a href="./index.html" class="logo-text header-logo"
           >Web<span class="logo-span">Studio</span></a
         >
-        <div class="header-mobile-menu" burger-modal>
+        <div class="header-mobile-menu" burger-menu>
           <button
             class="button-close-header"
             type="button"
@@ -34,13 +34,17 @@
           <nav class="header-nav">
             <ul class="header-menu">
               <li class="header-menu-item">
-                <a href="#hero" class="header-menu-title">Studio</a>
+                <a href="#hero" class="header-menu-title" header-menu>Studio</a>
               </li>
               <li class="header-menu-item">
-                <a href="#portfolio" class="header-menu-title">Portfolio</a>
+                <a href="#portfolio" class="header-menu-title" header-menu
+                  >Portfolio</a
+                >
               </li>
               <li class="header-menu-item">
-                <a href="#footer" class="header-menu-title">Contacts</a>
+                <a href="#footer" class="header-menu-title" header-menu
+                  >Contacts</a
+                >
               </li>
             </ul>
           </nav>
@@ -661,9 +665,9 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-subscribe-form">
             <label class="footer-subscribe-label">
+              <p class="footer-subscribe-text">Subscribe</p>
               <input
                 type="email"
                 name="subscribe-email"
@@ -687,22 +691,13 @@
       </div>
     </footer>
     <dialog class="modal" id="modal">
-      <button
-        class="button-close-modal"
-        type="button"
-        id="modal-close"
-        aria-label="Close modal window"
-      >
-        <svg class="close-icon" width="8" height="8">
-          <use href="./images/icons.svg#close-icon"></use>
-        </svg>
-      </button>
       <p class="form-title">Leave your contacts and we will call you back</p>
       <form class="modal-form">
         <div class="input-container">
           <label for="user-name" class="form-text-label">Name</label>
           <div class="form-input-container">
             <input
+              tabindex="1"
               id="user-name"
               type="text"
               class="form-input"
@@ -765,8 +760,10 @@
                 <use href="./images/icons.svg#checkbox-icon"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the
-            <a href="" class="form-text-link">Privacy Policy</a></label
+            <div class="checkbox-label-text">
+              I accept the terms and conditions of the
+              <a href="" class="form-text-link">Privacy Policy</a>
+            </div></label
           >
         </div>
         <button
@@ -777,6 +774,16 @@
           Send
         </button>
       </form>
+      <button
+        class="button-close-modal"
+        type="button"
+        id="modal-close"
+        aria-label="Close modal window"
+      >
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
     </dialog>
 
     <script src="./js/modal.js"></script>

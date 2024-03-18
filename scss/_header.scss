@@ -7,9 +7,7 @@
   left: 0;
   width: 100%;
   border-bottom: 1px solid var(--cornflower);
-
   background-color: var(--white);
-
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 50;
@@ -29,8 +27,6 @@
   color: var(--navy-blue);
 }
 
-.header-nav {
-}
 .header-menu {
   display: flex;
   flex-direction: column;
@@ -126,10 +122,11 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     padding-left: 16px;
     padding-right: 16px;
+    overflow: auto;
     background-color: var(--white);
-
     transform: translateY(-100%);
   }
   .is-burger-open {

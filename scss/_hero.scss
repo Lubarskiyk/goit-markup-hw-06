@@ -26,10 +26,6 @@
   height: 56px;
   margin: 0 auto;
 }
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--ocean);
-}
 
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -41,7 +37,6 @@
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
-    //  background-color: var(--navy-blue);
     padding: 188px 0;
   }
 
