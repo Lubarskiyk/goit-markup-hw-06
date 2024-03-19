@@ -470,7 +470,6 @@ body.lock {
   }
 }
 .hero {
-  max-width: 320px;
   background-color: var(--navy-blue);
   padding: 72px 0;
   margin-left: auto;
@@ -494,7 +493,7 @@ body.lock {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    padding: 112px 0;
     background-image: linear-gradient(to bottom, var(--grey), var(--grey)), image-set("../images/hero-people-office.webp" type("image/webp") 1x, "../images/hero-people-office-2x.webp" type("image/webp") 2x, "../images/hero-people-office.jpg" type("image/jpg") 1x, "../images/hero-people-office-2x.jpg" type("image/jpg") 2x);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
