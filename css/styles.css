@@ -189,8 +189,7 @@ body.lock {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -476,7 +475,6 @@ body.lock {
   padding: 72px 0;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to bottom, var(--grey), var(--grey)), -webkit-image-set("../images/hero-people-office-320.webp" type("image/webp") 1x, "../images/hero-people-office-320-2x.webp" type("image/webp") 2x, "../images/hero-people-office-320.jpg" type("image/jpg") 1x, "../images/hero-people-office-320-2x.jpg" type("image/jpg") 2x);
   background-image: linear-gradient(to bottom, var(--grey), var(--grey)), image-set("../images/hero-people-office-320.webp" type("image/webp") 1x, "../images/hero-people-office-320-2x.webp" type("image/webp") 2x, "../images/hero-people-office-320.jpg" type("image/jpg") 1x, "../images/hero-people-office-320-2x.jpg" type("image/jpg") 2x);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
@@ -497,7 +495,6 @@ body.lock {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: linear-gradient(to bottom, var(--grey), var(--grey)), -webkit-image-set("../images/hero-people-office.webp" type("image/webp") 1x, "../images/hero-people-office-2x.webp" type("image/webp") 2x, "../images/hero-people-office.jpg" type("image/jpg") 1x, "../images/hero-people-office-2x.jpg" type("image/jpg") 2x);
     background-image: linear-gradient(to bottom, var(--grey), var(--grey)), image-set("../images/hero-people-office.webp" type("image/webp") 1x, "../images/hero-people-office-2x.webp" type("image/webp") 2x, "../images/hero-people-office.jpg" type("image/jpg") 1x, "../images/hero-people-office-2x.jpg" type("image/jpg") 2x);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
@@ -535,8 +532,7 @@ body.lock {
 @media screen and (min-width: 768px) {
   .advantages-cards-list {
     flex-direction: row;
-    -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
     row-gap: 72px;
   }
   .advantages-cards-item {
@@ -626,8 +622,7 @@ body.lock {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 64px;
-    -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
   }
   .team-card {
     width: calc((100% - 24px) / 2);
@@ -662,11 +657,9 @@ body.lock {
 }
 
 .portfolio-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
-  -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .portfolio-img {
@@ -706,8 +699,7 @@ body.lock {
   .portfolio-cards-list {
     flex-direction: row;
     justify-content: space-between;
-    -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
   }
   .porfolio-card {
     width: calc((100% - 24px) / 2);
@@ -816,14 +808,6 @@ body.lock {
   letter-spacing: 0.04em;
 }
 
-.footer-subscribe-input::-moz-placeholder {
-  color: var(--white);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 200%;
-  letter-spacing: 0.04em;
-}
-
 .footer-subscribe-input::placeholder {
   color: var(--white);
   font-size: 12px;
@@ -858,8 +842,7 @@ body.lock {
     flex-direction: row;
     justify-content: start;
     align-items: baseline;
-    -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
     row-gap: 72px;
     padding-left: 108px;
   }
@@ -1058,13 +1041,6 @@ body.lock {
 
 .form-textarea:focus {
   border-color: var(--iris);
-}
-
-.form-textarea::-moz-placeholder {
-  font-size: 12px;
-  line-height: 117%;
-  letter-spacing: 0.04em;
-  color: var(--navy-blue-modal);
 }
 
 .form-textarea::placeholder {
