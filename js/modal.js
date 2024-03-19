@@ -19,11 +19,11 @@
   });
 
   const burger = {
-    openBurgerBtn: document.querySelector('[data-burger-open]'),
-    closeBurgerBtn: document.querySelector('[data-burger-close]'),
-    burger: document.querySelector('[burger-menu]'),
+    openBurgerBtn: document.querySelector('#data-burger-open'),
+    closeBurgerBtn: document.querySelector('#data-burger-close'),
+    burger: document.querySelector('#burger-menu'),
     body: document.querySelector('body'),
-    menu: document.querySelectorAll('[header-menu]'),
+    menu: document.querySelectorAll('.header-menu-title'),
   };
 
   burger.openBurgerBtn.addEventListener('click', addBurger);
