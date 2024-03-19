@@ -785,17 +785,24 @@ body.lock {
 .footer-subscribe-text {
   text-align: center;
   font-weight: 500;
-  margin-bottom: 16px;
 }
 
 .footer-subscribe-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+}
+
+.footer-subscribe-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .footer-subscribe-input {
+  display: inline-block;
   color: var(--white);
   background-color: inherit;
   border-radius: 4px;
@@ -874,12 +881,12 @@ body.lock {
   }
   .footer-subscribe-text {
     text-align: start;
-    margin-bottom: 16px;
   }
   .footer-subscribe-form {
+    align-items: start;
+  }
+  .footer-subscribe-wraper {
     flex-direction: row;
-    justify-content: start;
-    align-items: end;
     gap: 24px;
   }
 }
