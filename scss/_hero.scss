@@ -1,21 +1,38 @@
 .hero {
+  position: relative;
   background-color: var(--navy-blue);
   padding: 72px 0;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
-    image-set(
-      '../images/hero-people-office-320.webp' 1x type('image/webp'),
-      '../images/hero-people-office-320-2x.webp' 2x type('image/webp'),
-      '../images/hero-people-office-320.jpg' 1x type('image/jpg'),
-      '../images/hero-people-office-320-2x.jpg' 2x type('image/jpg')
-    );
-
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: cover, cover;
 }
 
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, var(--grey), var(--grey));
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
 .hero-title {
   max-width: 216px;
   margin: 0 auto 72px;
@@ -29,17 +46,17 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding: 112px 0;
-    background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
-      image-set(
-        '../images/hero-people-office.webp' 1x type('image/webp'),
-        '../images/hero-people-office-2x.webp' 2x type('image/webp'),
-        '../images/hero-people-office.jpg' 1x type('image/jpg'),
-        '../images/hero-people-office-2x.jpg' 2x type('image/jpg')
-      );
+    //  background-image: linear-gradient(to bottom, var(--grey), var(--grey));
+    //  // image-set(
+    //  //   '../images/hero-people-office.webp' 1x type('image/webp'),
+    //  //   '../images/hero-people-office-2x.webp' 2x type('image/webp'),
+    //  //   '../images/hero-people-office.jpg' 1x type('image/jpg'),
+    //  //   '../images/hero-people-office-2x.jpg' 2x type('image/jpg')
+    //  // );
 
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
-    background-size: cover, cover;
+    //  background-repeat: no-repeat;
+    //  background-position: center;
+    //  background-size: cover;
   }
   .hero-title {
     max-width: 496px;
