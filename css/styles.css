@@ -141,6 +141,10 @@ body.lock {
   letter-spacing: 0.02em;
 }
 
+.test {
+  color: red;
+}
+
 .button-text {
   display: block;
   border: none;
@@ -246,7 +250,7 @@ body.lock {
     line-height: 120%;
   }
 }
-.main {
+body {
   padding-top: 56px;
 }
 
@@ -389,7 +393,7 @@ body.lock {
   }
 }
 @media screen and (min-width: 768px) {
-  .main {
+  body {
     padding-top: 72px;
   }
   .header-social {

@@ -10,6 +10,7 @@ body {
   letter-spacing: 0.02em;
   background-color: var(--white);
 }
+
 body.lock {
   overflow: hidden;
 }
@@ -47,7 +48,9 @@ body.lock {
   text-transform: capitalize;
   letter-spacing: 0.02em;
 }
-
+.test {
+  color: red;
+}
 .button-text {
   display: block;
   border: none;
